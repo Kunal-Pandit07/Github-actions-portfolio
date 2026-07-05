@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
+  <title>Kunal Pandit | DevOps & Cloud Portfolio</title>
+  <meta
+    name="description"
+    content="Kunal Pandit - Aspiring DevOps Engineer, Cloud & Full-Stack Developer portfolio."
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- =========================
+       LOADER
+  ========================== -->
+  <div class="loader" id="loader">
+    <div class="loader-content">
+      <div class="loader-ring"></div>
+      <p>Loading Portfolio...</p>
+    </div>
+  </div>
+
+  <!-- =========================
+       BACK TO TOP
+  ========================== -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    ↑
+  </button>
+
+  <!-- =========================
+       HIDDEN ADMIN TRIGGER
+       Click this tiny invisible area 5 times
+  ========================== -->
+  <button
+    id="adminSecretTrigger"
+    class="admin-secret-trigger"
+    aria-label="Hidden Admin Trigger"
+    title="Hidden Admin Trigger"
+  ></button>
+
+  <!-- =========================
+       NAVBAR
+  ========================== -->
+  <header class="header" id="header">
+    <nav class="navbar container">
+      <a href="#home" class="logo">
+        <span class="logo-k">K</span>
+        <span id="navBrandName">Kunal Pandit</span>
+      </a>
+
+      <div class="nav-controls">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+          <span id="themeIcon">🌙</span>
+        </button>
+
+        <button class="nav-toggle" id="navToggle" aria-label="Open navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#certificate" class="nav-link">Certificate</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- =========================
+         HERO
+    ========================== -->
+    <section class="hero section" id="home">
+      <div class="hero-bg"></div>
+      <div class="container hero-grid">
+        <div class="hero-content reveal">
+          <p class="eyebrow">DevOps • Cloud • Full-Stack</p>
+          <h1 id="heroName">Kunal Pandit</h1>
+          <h2 id="heroRole">Aspiring DevOps Engineer | Cloud & Full-Stack Developer</h2>
+
+          <p class="hero-intro" id="heroIntro">
+            Computer Science undergraduate focused on full-stack development,
+            Linux, CI/CD, cloud fundamentals, and building toward DevOps and
+            scalable engineering roles.
+          </p>
+
+          <div class="typing-wrap">
+            <span>I’m a </span>
+            <span class="typed-text" id="typedText"></span>
+            <span class="cursor">|</span>
+          </div>
+
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">View Projects</a>
+            <a
+              href="assets/Kunal-Pandit-Resume.pdf"
+              class="btn btn-secondary"
+              id="resumeBtn"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Download Resume
+            </a>
+            <a href="#contact" class="btn btn-outline">Contact Me</a>
+          </div>
+
+          <div class="hero-mini-stats">
+            <div class="mini-card">
+              <strong>DevOps Focus</strong>
+              <span>Linux • Git • CI/CD • Cloud</span>
+            </div>
+            <div class="mini-card">
+              <strong>Full-Stack Projects</strong>
+              <span>React • Next.js • Node.js • Flask</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal">
+          <div class="avatar-card glass">
+            <div class="avatar-ring">
+              <div class="avatar-circle" id="avatarCircle">KP</div>
+            </div>
+            <div class="avatar-info">
+              <h3 id="heroCardName">Kunal Pandit</h3>
+              <p id="heroCardRole">DevOps / Cloud / Full-Stack</p>
+            </div>
+            <div class="tech-float tech-float-1">Docker</div>
+            <div class="tech-float tech-float-2">Linux</div>
+            <div class="tech-float tech-float-3">CI/CD</div>
+            <div class="tech-float tech-float-4">AWS</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================
+         ABOUT
+    ========================== -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="section-tag">About</p>
+          <h2>About Me</h2>
+          <p class="section-subtext">
+            A concise snapshot of my current development and DevOps journey.
+          </p>
+        </div>
+
+        <div class="about-card glass reveal">
+          <div class="about-grid">
+            <div>
+              <h3>Building toward DevOps, Cloud, and scalable software roles</h3>
+              <p id="aboutText">
+                I am a Computer Science undergraduate with hands-on experience in
+                full-stack web development and a strong interest in DevOps, Cloud
+                Computing, Linux, CI/CD, and automation. I have worked on
+                real-world projects using JavaScript, Python, React, Next.js,
+                Node.js, Express.js, MongoDB, PostgreSQL, and Flask. I also have
+                practical familiarity with Linux, Git, GitHub, GitHub Actions,
+                Bash, Docker basics, and cloud fundamentals. I’m currently
+                building toward DevOps, Cloud, and scalable software engineering
+                roles by combining development experience with modern
+                infrastructure learning.
+              </p>
+            </div>
+
+            <div class="about-highlights">
+              <div class="highlight-box">
+                <span>Focus Areas</span>
+                <strong>DevOps, Cloud, CI/CD, Full-Stack</strong>
+              </div>
+              <div class="highlight-box">
+                <span>Core Stack</span>
+                <strong>React, Next.js, Node.js, Flask, MongoDB</strong>
+              </div>
+              <div class="highlight-box">
+                <span>Current Direction</span>
+                <strong>DevOps / Cloud / Software Engineering</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================
+         SKILLS
+    ========================== -->
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="section-tag">Skills</p>
+          <h2>Skills & Technologies</h2>
+          <p class="section-subtext">
+            Development, database, DevOps, and tooling knowledge presented in a
+            recruiter-friendly format.
+          </p>
+        </div>
+
+        <div class="skills-grid" id="skillsGrid">
+          <!-- Dynamic from JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================
+         PROJECTS
+    ========================== -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="section-tag">Projects</p>
+          <h2>Featured Projects</h2>
+          <p class="section-subtext">
+            A mix of full-stack applications and systems that reflect both
+            development work and practical engineering interests.
+          </p>
+        </div>
+
+        <div class="project-filters reveal" id="projectFilters">
+          <button class="filter-btn active" data-filter="All">All</button>
+          <button class="filter-btn" data-filter="Full Stack">Full Stack</button>
+          <button class="filter-btn" data-filter="DevOps">DevOps</button>
+          <button class="filter-btn" data-filter="Python">Python</button>
+          <button class="filter-btn" data-filter="Web App">Web App</button>
+        </div>
+
+        <div class="projects-grid" id="projectsGrid">
+          <!-- Dynamic from JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================
+         EDUCATION
+    ========================== -->
+    <section class="section" id="education">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="section-tag">Education</p>
+          <h2>Education</h2>
+          <p class="section-subtext">
+            Academic background and current degree details.
+          </p>
+        </div>
+
+        <div class="education-card glass reveal" id="educationCard">
+          <!-- Dynamic from JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================
+         CERTIFICATE
+    ========================== -->
+    <section class="section" id="certificate">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="section-tag">Certificate</p>
+          <h2>Certificate</h2>
+          <p class="section-subtext">
+            A compact certification section that stays easy to update.
+          </p>
+        </div>
+
+        <div class="certificate-grid" id="certificateGrid">
+          <!-- Dynamic from JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================
+         CONTACT
+    ========================== -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="section-tag">Contact</p>
+          <h2>Get In Touch</h2>
+          <p class="section-subtext">
+            Open to internships, fresher opportunities, project collaboration,
+            and learning-focused engineering roles.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-info glass reveal">
+            <h3>Contact Information</h3>
+
+            <div class="contact-list" id="contactList">
+              <!-- Dynamic from JS -->
+            </div>
+
+            <div class="contact-note">
+              <p>
+                If you’re hiring for DevOps, Cloud, or Full-Stack fresher roles,
+                I’d be glad to connect.
+              </p>
+            </div>
+          </div>
+
+          <div class="contact-form-card glass reveal">
+            <h3>Send a Message</h3>
+            <form id="contactForm" novalidate>
+              <div class="form-group">
+                <label for="contactName">Name</label>
+                <input type="text" id="contactName" name="name" placeholder="Your name" />
+                <small class="error-msg"></small>
+              </div>
+
+              <div class="form-group">
+                <label for="contactEmail">Email</label>
+                <input type="email" id="contactEmail" name="email" placeholder="Your email" />
+                <small class="error-msg"></small>
+              </div>
+
+              <div class="form-group">
+                <label for="contactMessage">Message</label>
+                <textarea
+                  id="contactMessage"
+                  name="message"
+                  rows="6"
+                  placeholder="Your message"
+                ></textarea>
+                <small class="error-msg"></small>
+              </div>
+
+              <button type="submit" class="btn btn-primary full-width">
+                Send Message
+              </button>
+              <p class="form-status" id="formStatus"></p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- =========================
+       FOOTER
+  ========================== -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <h3 id="footerName">Kunal Pandit</h3>
+        <p class="footer-copy">
+          © <span id="currentYear"></span> <span id="footerNameCopy">Kunal Pandit</span>. All rights reserved.
+        </p>
+      </div>
+
+      <div>
+        <h4>Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Social</h4>
+        <div class="footer-socials" id="footerSocials">
+          <!-- Dynamic from JS -->
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- =========================
+       ADMIN PANEL
+  ========================== -->
+  <div class="admin-modal hidden" id="adminModal" aria-hidden="true">
+    <div class="admin-backdrop" id="adminBackdrop"></div>
+
+    <div class="admin-panel glass">
+      <!-- Password Gate -->
+      <div class="admin-gate" id="adminGate">
+        <div class="admin-panel-header">
+          <div>
+            <p class="section-tag">Admin Access</p>
+            <h3>Private Portfolio Update Panel</h3>
+          </div>
+          <button class="admin-close" id="adminCloseGate" aria-label="Close admin">
+            ×
+          </button>
+        </div>
+
+        <p class="admin-help">
+          Enter the admin password to unlock editing controls for your portfolio.
+        </p>
+
+        <div class="form-group">
+          <label for="adminPassword">Password</label>
+          <input
+            type="password"
+            id="adminPassword"
+            placeholder="Enter admin password"
+          />
+          <small class="error-msg" id="adminPasswordError"></small>
+        </div>
+
+        <div class="admin-actions">
+          <button class="btn btn-primary" id="adminLoginBtn">Unlock</button>
+          <button class="btn btn-secondary" id="adminCancelBtn">Cancel</button>
+        </div>
+      </div>
+
+      <!-- Admin Editor -->
+      <div class="admin-editor hidden" id="adminEditor">
+        <div class="admin-panel-header">
+          <div>
+            <p class="section-tag">Admin Panel</p>
+            <h3>Edit Portfolio Content</h3>
+          </div>
+          <button class="admin-close" id="adminCloseEditor" aria-label="Close admin">
+            ×
+          </button>
+        </div>
+
+        <div class="admin-layout">
+          <aside class="admin-sidebar" id="adminSidebar">
+            <button class="admin-tab active" data-tab="basic">Basic Info</button>
+            <button class="admin-tab" data-tab="about">About</button>
+            <button class="admin-tab" data-tab="resume">Resume</button>
+            <button class="admin-tab" data-tab="skills">Skills</button>
+            <button class="admin-tab" data-tab="projects">Projects</button>
+            <button class="admin-tab" data-tab="education">Education</button>
+            <button class="admin-tab" data-tab="certificate">Certificate</button>
+            <button class="admin-tab" data-tab="contact">Contact</button>
+            <button class="admin-tab" data-tab="appearance">Appearance</button>
+          </aside>
+
+          <div class="admin-content">
+            <!-- BASIC INFO -->
+            <div class="admin-tab-panel active" id="tab-basic">
+              <h4>Basic Info</h4>
+              <div class="admin-form-grid">
+                <div class="form-group">
+                  <label for="adminName">Name</label>
+                  <input type="text" id="adminName" />
+                </div>
+                <div class="form-group">
+                  <label for="adminRole">Role / Title</label>
+                  <input type="text" id="adminRole" />
+                </div>
+                <div class="form-group full">
+                  <label for="adminHeroIntro">Hero Intro</label>
+                  <textarea id="adminHeroIntro" rows="4"></textarea>
+                </div>
+              </div>
+            </div>
+
+            <!-- ABOUT -->
+            <div class="admin-tab-panel" id="tab-about">
+              <h4>About Section</h4>
+              <div class="form-group">
+                <label for="adminAboutText">About Text</label>
+                <textarea id="adminAboutText" rows="10"></textarea>
+              </div>
+            </div>
+
+            <!-- RESUME -->
+            <div class="admin-tab-panel" id="tab-resume">
+              <h4>Resume Settings</h4>
+              <div class="admin-form-grid">
+                <div class="form-group">
+                  <label for="adminResumeLink">Resume Link / File Path</label>
+                  <input type="text" id="adminResumeLink" />
+                </div>
+                <div class="form-group">
+                  <label for="adminResumeLabel">Resume Button Label</label>
+                  <input type="text" id="adminResumeLabel" />
+                </div>
+              </div>
+            </div>
+
+            <!-- SKILLS -->
+            <div class="admin-tab-panel" id="tab-skills">
+              <div class="admin-panel-row">
+                <h4>Skills</h4>
+                <button class="btn btn-secondary btn-sm" id="addSkillBtn">+ Add Skill</button>
+              </div>
+              <div id="adminSkillsContainer"></div>
+            </div>
+
+            <!-- PROJECTS -->
+            <div class="admin-tab-panel" id="tab-projects">
+              <div class="admin-panel-row">
+                <h4>Projects</h4>
+                <button class="btn btn-secondary btn-sm" id="addProjectBtn">+ Add Project</button>
+              </div>
+              <div id="adminProjectsContainer"></div>
+            </div>
+
+            <!-- EDUCATION -->
+            <div class="admin-tab-panel" id="tab-education">
+              <h4>Education</h4>
+              <div class="admin-form-grid">
+                <div class="form-group">
+                  <label for="adminDegree">Degree</label>
+                  <input type="text" id="adminDegree" />
+                </div>
+                <div class="form-group">
+                  <label for="adminCollege">College</label>
+                  <input type="text" id="adminCollege" />
+                </div>
+                <div class="form-group">
+                  <label for="adminUniversity">University</label>
+                  <input type="text" id="adminUniversity" />
+                </div>
+                <div class="form-group">
+                  <label for="adminGraduation">Expected Graduation</label>
+                  <input type="text" id="adminGraduation" />
+                </div>
+              </div>
+            </div>
+
+            <!-- CERTIFICATE -->
+            <div class="admin-tab-panel" id="tab-certificate">
+              <div class="admin-panel-row">
+                <h4>Certificates</h4>
+                <button class="btn btn-secondary btn-sm" id="addCertificateBtn">
+                  + Add Certificate
+                </button>
+              </div>
+              <div id="adminCertificatesContainer"></div>
+            </div>
+
+            <!-- CONTACT -->
+            <div class="admin-tab-panel" id="tab-contact">
+              <h4>Contact & Social</h4>
+              <div class="admin-form-grid">
+                <div class="form-group">
+                  <label for="adminEmail">Email</label>
+                  <input type="text" id="adminEmail" />
+                </div>
+                <div class="form-group">
+                  <label for="adminPhone">Phone</label>
+                  <input type="text" id="adminPhone" />
+                </div>
+                <div class="form-group">
+                  <label for="adminLocation">Location</label>
+                  <input type="text" id="adminLocation" />
+                </div>
+                <div class="form-group">
+                  <label for="adminLinkedIn">LinkedIn</label>
+                  <input type="text" id="adminLinkedIn" />
+                </div>
+                <div class="form-group full">
+                  <label for="adminGitHub">GitHub</label>
+                  <input type="text" id="adminGitHub" />
+                </div>
+              </div>
+            </div>
+
+            <!-- APPEARANCE -->
+            <div class="admin-tab-panel" id="tab-appearance">
+              <h4>Appearance</h4>
+              <div class="admin-form-grid">
+                <div class="form-group">
+                  <label for="adminAccentColor">Accent Color</label>
+                  <input type="color" id="adminAccentColor" />
+                </div>
+                <div class="form-group">
+                  <label for="adminDefaultTheme">Default Theme</label>
+                  <select id="adminDefaultTheme">
+                    <option value="dark">Dark</option>
+                    <option value="light">Light</option>
+                  </select>
+                </div>
+              </div>
+              <p class="admin-help small">
+                The default theme is used when no user preference is already stored in the browser.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="admin-footer">
+          <p id="adminSaveStatus" class="admin-save-status"></p>
+          <div class="admin-actions">
+            <button class="btn btn-danger" id="resetPortfolioBtn">Reset to Default</button>
+            <button class="btn btn-secondary" id="closeAdminBtn">Close</button>
+            <button class="btn btn-primary" id="savePortfolioBtn">Save Changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
